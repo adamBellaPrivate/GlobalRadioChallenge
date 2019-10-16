@@ -1,0 +1,856 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		467CACE74374AA524DCD668E /* Pods_GlobalRadioChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 942B0B55CC5D40FD00C395EA /* Pods_GlobalRadioChallenge.framework */; };
+		E4EA18A723561D1C00BE4E70 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EA18A623561D1C00BE4E70 /* MainViewController.swift */; };
+		E4EA18B12356FD8C00BE4E70 /* ApiWorkerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EA18B02356FD8C00BE4E70 /* ApiWorkerProtocol.swift */; };
+		E4EA18B32356FD9700BE4E70 /* ApiWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EA18B22356FD9700BE4E70 /* ApiWorker.swift */; };
+		E4EA18B52356FDA600BE4E70 /* ErrorWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EA18B42356FDA600BE4E70 /* ErrorWorker.swift */; };
+		E4EA18B72356FDDD00BE4E70 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EA18B62356FDDD00BE4E70 /* StringExtension.swift */; };
+		E4EA18B92356FDFE00BE4E70 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E4EA18B82356FDFE00BE4E70 /* Localizable.strings */; };
+		E4EA18C02356FF3200BE4E70 /* UserDefaultsWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EA18BF2356FF3200BE4E70 /* UserDefaultsWorker.swift */; };
+		E4EA18C6235702E800BE4E70 /* MainInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EA18C5235702E800BE4E70 /* MainInteractorProtocol.swift */; };
+		E4EA18C8235702F100BE4E70 /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EA18C7235702F100BE4E70 /* MainInteractor.swift */; };
+		E4EA18CA235702FF00BE4E70 /* MainPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EA18C9235702FF00BE4E70 /* MainPresenterProtocol.swift */; };
+		E4EA18CC2357030900BE4E70 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EA18CB2357030900BE4E70 /* MainPresenter.swift */; };
+		E4EA18CE2357042D00BE4E70 /* UserDefaultsWorkerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EA18CD2357042D00BE4E70 /* UserDefaultsWorkerProtocol.swift */; };
+		E4EA18D02357080500BE4E70 /* InitialApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EA18CF2357080500BE4E70 /* InitialApiResponse.swift */; };
+		E4EA18D32357086600BE4E70 /* InitialApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EA18D22357086600BE4E70 /* InitialApiRequest.swift */; };
+		E4EA18D523570FED00BE4E70 /* RetrieveUUIDApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EA18D423570FED00BE4E70 /* RetrieveUUIDApiRequest.swift */; };
+		E4EA18D72357101F00BE4E70 /* RetrieveUUIDApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EA18D62357101F00BE4E70 /* RetrieveUUIDApiResponse.swift */; };
+		E4EA18DB23571BE000BE4E70 /* LocalizedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EA18DA23571BE000BE4E70 /* LocalizedLabel.swift */; };
+		E4EA18DE23571D6000BE4E70 /* LocalizedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EA18DD23571D6000BE4E70 /* LocalizedButton.swift */; };
+		E4EC089523573CCB00C14539 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EC089423573CCB00C14539 /* ViewModel.swift */; };
+		E4EC08972357499100C14539 /* MockApiWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EC08962357499100C14539 /* MockApiWorker.swift */; };
+		E4EC0898235749BA00C14539 /* ApiWorkerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EA18B02356FD8C00BE4E70 /* ApiWorkerProtocol.swift */; };
+		E4EC0899235749C700C14539 /* UserDefaultsWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EA18BF2356FF3200BE4E70 /* UserDefaultsWorker.swift */; };
+		E4EC089A235749C900C14539 /* UserDefaultsWorkerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EA18CD2357042D00BE4E70 /* UserDefaultsWorkerProtocol.swift */; };
+		E4EC089C23574A1300C14539 /* InitialApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EA18CF2357080500BE4E70 /* InitialApiResponse.swift */; };
+		E4EC089D23574A1300C14539 /* RetrieveUUIDApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EA18D62357101F00BE4E70 /* RetrieveUUIDApiResponse.swift */; };
+		E4EC089E23574A1600C14539 /* InitialApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EA18D22357086600BE4E70 /* InitialApiRequest.swift */; };
+		E4EC089F23574A1600C14539 /* RetrieveUUIDApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EA18D423570FED00BE4E70 /* RetrieveUUIDApiRequest.swift */; };
+		E4EC08A023574A6600C14539 /* ErrorWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EA18B42356FDA600BE4E70 /* ErrorWorker.swift */; };
+		E4EC08A123574BE800C14539 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EA18B62356FDDD00BE4E70 /* StringExtension.swift */; };
+		E4EC08A223574CF300C14539 /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EA18C7235702F100BE4E70 /* MainInteractor.swift */; };
+		E4EC08A323574CF600C14539 /* MainInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EA18C5235702E800BE4E70 /* MainInteractorProtocol.swift */; };
+		E4EC08A623574F9800C14539 /* MockInitialApiResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = E4EC08A523574F9800C14539 /* MockInitialApiResponse.json */; };
+		E4EC08A823574FB200C14539 /* MockRetrieveUUIDApiResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = E4EC08A723574FB200C14539 /* MockRetrieveUUIDApiResponse.json */; };
+		E4EC08AA2357503100C14539 /* ApiMockUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EC08A92357503100C14539 /* ApiMockUtils.swift */; };
+		E4EC08AC2357553D00C14539 /* MainDisplayLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EC08AB2357553D00C14539 /* MainDisplayLogic.swift */; };
+		E4EC08AE235755E000C14539 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EA18CB2357030900BE4E70 /* MainPresenter.swift */; };
+		E4EC08B02357564E00C14539 /* MainPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EA18C9235702FF00BE4E70 /* MainPresenterProtocol.swift */; };
+		E4EC08B12357567200C14539 /* MainDisplayLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EC08AB2357553D00C14539 /* MainDisplayLogic.swift */; };
+		E4EC08B22357585300C14539 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EC089423573CCB00C14539 /* ViewModel.swift */; };
+		E4FE0EAE2355F72300CB6174 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FE0EAD2355F72300CB6174 /* AppDelegate.swift */; };
+		E4FE0EB52355F72300CB6174 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4FE0EB32355F72300CB6174 /* Main.storyboard */; };
+		E4FE0EB72355F72700CB6174 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4FE0EB62355F72700CB6174 /* Assets.xcassets */; };
+		E4FE0EBA2355F72700CB6174 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4FE0EB82355F72700CB6174 /* LaunchScreen.storyboard */; };
+		E4FE0EC52355F72800CB6174 /* GlobalRadioChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FE0EC42355F72800CB6174 /* GlobalRadioChallengeTests.swift */; };
+		EC9164DD4617E39F2048BB53 /* Pods_GlobalRadioChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 650DA6C276D0AA81C74192A9 /* Pods_GlobalRadioChallengeTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E4FE0EC12355F72800CB6174 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4FE0EA22355F72300CB6174 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E4FE0EA92355F72300CB6174;
+			remoteInfo = GlobalRadioChallenge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0EDE1321B8588D7F3E01E7C9 /* Pods-GlobalRadioChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlobalRadioChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-GlobalRadioChallengeTests/Pods-GlobalRadioChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		2F1B29BC2ABFE9166489248A /* Pods-GlobalRadioChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlobalRadioChallengeTests.debug.xcconfig"; path = "Target Support Files/Pods-GlobalRadioChallengeTests/Pods-GlobalRadioChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		650DA6C276D0AA81C74192A9 /* Pods_GlobalRadioChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GlobalRadioChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7345BF2F384F9E127BCA50EC /* Pods-GlobalRadioChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlobalRadioChallenge.release.xcconfig"; path = "Target Support Files/Pods-GlobalRadioChallenge/Pods-GlobalRadioChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		942B0B55CC5D40FD00C395EA /* Pods_GlobalRadioChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GlobalRadioChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		94B8A4EA7393B2B4A3BC30F5 /* Pods-GlobalRadioChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlobalRadioChallenge.debug.xcconfig"; path = "Target Support Files/Pods-GlobalRadioChallenge/Pods-GlobalRadioChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		E4EA18A623561D1C00BE4E70 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		E4EA18B02356FD8C00BE4E70 /* ApiWorkerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiWorkerProtocol.swift; sourceTree = "<group>"; };
+		E4EA18B22356FD9700BE4E70 /* ApiWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiWorker.swift; sourceTree = "<group>"; };
+		E4EA18B42356FDA600BE4E70 /* ErrorWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorWorker.swift; sourceTree = "<group>"; };
+		E4EA18B62356FDDD00BE4E70 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		E4EA18B82356FDFE00BE4E70 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		E4EA18BF2356FF3200BE4E70 /* UserDefaultsWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsWorker.swift; sourceTree = "<group>"; };
+		E4EA18C5235702E800BE4E70 /* MainInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractorProtocol.swift; sourceTree = "<group>"; };
+		E4EA18C7235702F100BE4E70 /* MainInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
+		E4EA18C9235702FF00BE4E70 /* MainPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenterProtocol.swift; sourceTree = "<group>"; };
+		E4EA18CB2357030900BE4E70 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		E4EA18CD2357042D00BE4E70 /* UserDefaultsWorkerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsWorkerProtocol.swift; sourceTree = "<group>"; };
+		E4EA18CF2357080500BE4E70 /* InitialApiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialApiResponse.swift; sourceTree = "<group>"; };
+		E4EA18D22357086600BE4E70 /* InitialApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialApiRequest.swift; sourceTree = "<group>"; };
+		E4EA18D423570FED00BE4E70 /* RetrieveUUIDApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetrieveUUIDApiRequest.swift; sourceTree = "<group>"; };
+		E4EA18D62357101F00BE4E70 /* RetrieveUUIDApiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetrieveUUIDApiResponse.swift; sourceTree = "<group>"; };
+		E4EA18DA23571BE000BE4E70 /* LocalizedLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedLabel.swift; sourceTree = "<group>"; };
+		E4EA18DD23571D6000BE4E70 /* LocalizedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedButton.swift; sourceTree = "<group>"; };
+		E4EC089423573CCB00C14539 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		E4EC08962357499100C14539 /* MockApiWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockApiWorker.swift; sourceTree = "<group>"; };
+		E4EC08A523574F9800C14539 /* MockInitialApiResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MockInitialApiResponse.json; sourceTree = "<group>"; };
+		E4EC08A723574FB200C14539 /* MockRetrieveUUIDApiResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MockRetrieveUUIDApiResponse.json; sourceTree = "<group>"; };
+		E4EC08A92357503100C14539 /* ApiMockUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiMockUtils.swift; sourceTree = "<group>"; };
+		E4EC08AB2357553D00C14539 /* MainDisplayLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDisplayLogic.swift; sourceTree = "<group>"; };
+		E4FE0EAA2355F72300CB6174 /* GlobalRadioChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GlobalRadioChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4FE0EAD2355F72300CB6174 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E4FE0EB42355F72300CB6174 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E4FE0EB62355F72700CB6174 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E4FE0EB92355F72700CB6174 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E4FE0EBB2355F72700CB6174 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4FE0EC02355F72800CB6174 /* GlobalRadioChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GlobalRadioChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4FE0EC42355F72800CB6174 /* GlobalRadioChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalRadioChallengeTests.swift; sourceTree = "<group>"; };
+		E4FE0EC62355F72800CB6174 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E4FE0EA72355F72300CB6174 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				467CACE74374AA524DCD668E /* Pods_GlobalRadioChallenge.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4FE0EBD2355F72800CB6174 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC9164DD4617E39F2048BB53 /* Pods_GlobalRadioChallengeTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		52A17CE810C84D67396C8FCA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				942B0B55CC5D40FD00C395EA /* Pods_GlobalRadioChallenge.framework */,
+				650DA6C276D0AA81C74192A9 /* Pods_GlobalRadioChallengeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D2AEF3D0889268B2B0F80E3F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				94B8A4EA7393B2B4A3BC30F5 /* Pods-GlobalRadioChallenge.debug.xcconfig */,
+				7345BF2F384F9E127BCA50EC /* Pods-GlobalRadioChallenge.release.xcconfig */,
+				2F1B29BC2ABFE9166489248A /* Pods-GlobalRadioChallengeTests.debug.xcconfig */,
+				0EDE1321B8588D7F3E01E7C9 /* Pods-GlobalRadioChallengeTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E4EA18A82356FD1400BE4E70 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E4EA18BA2356FE3200BE4E70 /* API */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E4EA18A92356FD1900BE4E70 /* Workers */ = {
+			isa = PBXGroup;
+			children = (
+				E4EA18AF2356FD8000BE4E70 /* Protocols */,
+				E4EA18B22356FD9700BE4E70 /* ApiWorker.swift */,
+				E4EA18B42356FDA600BE4E70 /* ErrorWorker.swift */,
+				E4EA18BF2356FF3200BE4E70 /* UserDefaultsWorker.swift */,
+			);
+			path = Workers;
+			sourceTree = "<group>";
+		};
+		E4EA18AA2356FD2100BE4E70 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E4FE0EB62355F72700CB6174 /* Assets.xcassets */,
+				E4EA18B82356FDFE00BE4E70 /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E4EA18AB2356FD2C00BE4E70 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E4EA18B62356FDDD00BE4E70 /* StringExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E4EA18AC2356FD3300BE4E70 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				E4EA18AD2356FD4300BE4E70 /* Launch */,
+				E4EA18AE2356FD4C00BE4E70 /* Main */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		E4EA18AD2356FD4300BE4E70 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				E4FE0EB82355F72700CB6174 /* LaunchScreen.storyboard */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		E4EA18AE2356FD4C00BE4E70 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				E4EA18C3235702CF00BE4E70 /* View */,
+				E4EA18C4235702D300BE4E70 /* Presenter */,
+				E4EA18C2235702C600BE4E70 /* Interactor */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		E4EA18AF2356FD8000BE4E70 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				E4EA18B02356FD8C00BE4E70 /* ApiWorkerProtocol.swift */,
+				E4EA18CD2357042D00BE4E70 /* UserDefaultsWorkerProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		E4EA18BA2356FE3200BE4E70 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				E4EA18BC2356FE3D00BE4E70 /* Responses */,
+				E4EA18BB2356FE3700BE4E70 /* Requests */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		E4EA18BB2356FE3700BE4E70 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				E4EA18D22357086600BE4E70 /* InitialApiRequest.swift */,
+				E4EA18D423570FED00BE4E70 /* RetrieveUUIDApiRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		E4EA18BC2356FE3D00BE4E70 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				E4EA18CF2357080500BE4E70 /* InitialApiResponse.swift */,
+				E4EA18D62357101F00BE4E70 /* RetrieveUUIDApiResponse.swift */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		E4EA18C2235702C600BE4E70 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				E4EA18C5235702E800BE4E70 /* MainInteractorProtocol.swift */,
+				E4EA18C7235702F100BE4E70 /* MainInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		E4EA18C3235702CF00BE4E70 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E4FE0EB32355F72300CB6174 /* Main.storyboard */,
+				E4EA18A623561D1C00BE4E70 /* MainViewController.swift */,
+				E4EC089423573CCB00C14539 /* ViewModel.swift */,
+				E4EC08AB2357553D00C14539 /* MainDisplayLogic.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E4EA18C4235702D300BE4E70 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				E4EA18C9235702FF00BE4E70 /* MainPresenterProtocol.swift */,
+				E4EA18CB2357030900BE4E70 /* MainPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		E4EA18D823571BCE00BE4E70 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				E4EA18DC23571D4F00BE4E70 /* Buttons */,
+				E4EA18D923571BD300BE4E70 /* Labels */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		E4EA18D923571BD300BE4E70 /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+				E4EA18DA23571BE000BE4E70 /* LocalizedLabel.swift */,
+			);
+			path = Labels;
+			sourceTree = "<group>";
+		};
+		E4EA18DC23571D4F00BE4E70 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				E4EA18DD23571D6000BE4E70 /* LocalizedButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		E4EC08A423574F4300C14539 /* MockApiJsons */ = {
+			isa = PBXGroup;
+			children = (
+				E4EC08A523574F9800C14539 /* MockInitialApiResponse.json */,
+				E4EC08A723574FB200C14539 /* MockRetrieveUUIDApiResponse.json */,
+			);
+			path = MockApiJsons;
+			sourceTree = "<group>";
+		};
+		E4FE0EA12355F72300CB6174 = {
+			isa = PBXGroup;
+			children = (
+				E4FE0EAC2355F72300CB6174 /* GlobalRadioChallenge */,
+				E4FE0EC32355F72800CB6174 /* GlobalRadioChallengeTests */,
+				E4FE0EAB2355F72300CB6174 /* Products */,
+				D2AEF3D0889268B2B0F80E3F /* Pods */,
+				52A17CE810C84D67396C8FCA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E4FE0EAB2355F72300CB6174 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E4FE0EAA2355F72300CB6174 /* GlobalRadioChallenge.app */,
+				E4FE0EC02355F72800CB6174 /* GlobalRadioChallengeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E4FE0EAC2355F72300CB6174 /* GlobalRadioChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				E4EA18D823571BCE00BE4E70 /* CustomViews */,
+				E4EA18AB2356FD2C00BE4E70 /* Extensions */,
+				E4EA18AA2356FD2100BE4E70 /* Resources */,
+				E4EA18AC2356FD3300BE4E70 /* Scenes */,
+				E4EA18A92356FD1900BE4E70 /* Workers */,
+				E4EA18A82356FD1400BE4E70 /* Models */,
+				E4FE0EAD2355F72300CB6174 /* AppDelegate.swift */,
+				E4FE0EBB2355F72700CB6174 /* Info.plist */,
+			);
+			path = GlobalRadioChallenge;
+			sourceTree = "<group>";
+		};
+		E4FE0EC32355F72800CB6174 /* GlobalRadioChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				E4EC08A423574F4300C14539 /* MockApiJsons */,
+				E4FE0EC42355F72800CB6174 /* GlobalRadioChallengeTests.swift */,
+				E4FE0EC62355F72800CB6174 /* Info.plist */,
+				E4EC08962357499100C14539 /* MockApiWorker.swift */,
+				E4EC08A92357503100C14539 /* ApiMockUtils.swift */,
+			);
+			path = GlobalRadioChallengeTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E4FE0EA92355F72300CB6174 /* GlobalRadioChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4FE0EC92355F72800CB6174 /* Build configuration list for PBXNativeTarget "GlobalRadioChallenge" */;
+			buildPhases = (
+				B467CA37F043F3B4E11C18A3 /* [CP] Check Pods Manifest.lock */,
+				E4FE0EA62355F72300CB6174 /* Sources */,
+				E4FE0EA72355F72300CB6174 /* Frameworks */,
+				E4FE0EA82355F72300CB6174 /* Resources */,
+				15FD2A81EBB4E63EE7DBB01B /* [CP] Embed Pods Frameworks */,
+				E4EA18C12356FFB400BE4E70 /* Swiftlint */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GlobalRadioChallenge;
+			productName = GlobalRadioChallenge;
+			productReference = E4FE0EAA2355F72300CB6174 /* GlobalRadioChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E4FE0EBF2355F72800CB6174 /* GlobalRadioChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4FE0ECC2355F72800CB6174 /* Build configuration list for PBXNativeTarget "GlobalRadioChallengeTests" */;
+			buildPhases = (
+				DEDFF7033CF36D43D544FC7B /* [CP] Check Pods Manifest.lock */,
+				E4FE0EBC2355F72800CB6174 /* Sources */,
+				E4FE0EBD2355F72800CB6174 /* Frameworks */,
+				E4FE0EBE2355F72800CB6174 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E4FE0EC22355F72800CB6174 /* PBXTargetDependency */,
+			);
+			name = GlobalRadioChallengeTests;
+			productName = GlobalRadioChallengeTests;
+			productReference = E4FE0EC02355F72800CB6174 /* GlobalRadioChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E4FE0EA22355F72300CB6174 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "Bella Ádám";
+				TargetAttributes = {
+					E4FE0EA92355F72300CB6174 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					E4FE0EBF2355F72800CB6174 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = E4FE0EA92355F72300CB6174;
+					};
+				};
+			};
+			buildConfigurationList = E4FE0EA52355F72300CB6174 /* Build configuration list for PBXProject "GlobalRadioChallenge" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E4FE0EA12355F72300CB6174;
+			productRefGroup = E4FE0EAB2355F72300CB6174 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E4FE0EA92355F72300CB6174 /* GlobalRadioChallenge */,
+				E4FE0EBF2355F72800CB6174 /* GlobalRadioChallengeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E4FE0EA82355F72300CB6174 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4FE0EBA2355F72700CB6174 /* LaunchScreen.storyboard in Resources */,
+				E4EA18B92356FDFE00BE4E70 /* Localizable.strings in Resources */,
+				E4FE0EB72355F72700CB6174 /* Assets.xcassets in Resources */,
+				E4FE0EB52355F72300CB6174 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4FE0EBE2355F72800CB6174 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4EC08A823574FB200C14539 /* MockRetrieveUUIDApiResponse.json in Resources */,
+				E4EC08A623574F9800C14539 /* MockInitialApiResponse.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		15FD2A81EBB4E63EE7DBB01B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GlobalRadioChallenge/Pods-GlobalRadioChallenge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GlobalRadioChallenge/Pods-GlobalRadioChallenge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GlobalRadioChallenge/Pods-GlobalRadioChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B467CA37F043F3B4E11C18A3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GlobalRadioChallenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DEDFF7033CF36D43D544FC7B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GlobalRadioChallengeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4EA18C12356FFB400BE4E70 /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E4FE0EA62355F72300CB6174 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4EA18A723561D1C00BE4E70 /* MainViewController.swift in Sources */,
+				E4EA18B12356FD8C00BE4E70 /* ApiWorkerProtocol.swift in Sources */,
+				E4EA18B72356FDDD00BE4E70 /* StringExtension.swift in Sources */,
+				E4EA18C8235702F100BE4E70 /* MainInteractor.swift in Sources */,
+				E4EA18C6235702E800BE4E70 /* MainInteractorProtocol.swift in Sources */,
+				E4EA18B32356FD9700BE4E70 /* ApiWorker.swift in Sources */,
+				E4EA18DB23571BE000BE4E70 /* LocalizedLabel.swift in Sources */,
+				E4EA18C02356FF3200BE4E70 /* UserDefaultsWorker.swift in Sources */,
+				E4EA18CC2357030900BE4E70 /* MainPresenter.swift in Sources */,
+				E4EA18D523570FED00BE4E70 /* RetrieveUUIDApiRequest.swift in Sources */,
+				E4EA18B52356FDA600BE4E70 /* ErrorWorker.swift in Sources */,
+				E4EC089523573CCB00C14539 /* ViewModel.swift in Sources */,
+				E4EA18CE2357042D00BE4E70 /* UserDefaultsWorkerProtocol.swift in Sources */,
+				E4FE0EAE2355F72300CB6174 /* AppDelegate.swift in Sources */,
+				E4EC08AC2357553D00C14539 /* MainDisplayLogic.swift in Sources */,
+				E4EA18DE23571D6000BE4E70 /* LocalizedButton.swift in Sources */,
+				E4EA18CA235702FF00BE4E70 /* MainPresenterProtocol.swift in Sources */,
+				E4EA18D02357080500BE4E70 /* InitialApiResponse.swift in Sources */,
+				E4EA18D72357101F00BE4E70 /* RetrieveUUIDApiResponse.swift in Sources */,
+				E4EA18D32357086600BE4E70 /* InitialApiRequest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4FE0EBC2355F72800CB6174 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4EC0899235749C700C14539 /* UserDefaultsWorker.swift in Sources */,
+				E4EC08972357499100C14539 /* MockApiWorker.swift in Sources */,
+				E4EC08A323574CF600C14539 /* MainInteractorProtocol.swift in Sources */,
+				E4EC0898235749BA00C14539 /* ApiWorkerProtocol.swift in Sources */,
+				E4EC089A235749C900C14539 /* UserDefaultsWorkerProtocol.swift in Sources */,
+				E4EC089C23574A1300C14539 /* InitialApiResponse.swift in Sources */,
+				E4EC08AA2357503100C14539 /* ApiMockUtils.swift in Sources */,
+				E4EC089D23574A1300C14539 /* RetrieveUUIDApiResponse.swift in Sources */,
+				E4FE0EC52355F72800CB6174 /* GlobalRadioChallengeTests.swift in Sources */,
+				E4EC089E23574A1600C14539 /* InitialApiRequest.swift in Sources */,
+				E4EC08B22357585300C14539 /* ViewModel.swift in Sources */,
+				E4EC08AE235755E000C14539 /* MainPresenter.swift in Sources */,
+				E4EC08A023574A6600C14539 /* ErrorWorker.swift in Sources */,
+				E4EC08A123574BE800C14539 /* StringExtension.swift in Sources */,
+				E4EC08B12357567200C14539 /* MainDisplayLogic.swift in Sources */,
+				E4EC08B02357564E00C14539 /* MainPresenterProtocol.swift in Sources */,
+				E4EC089F23574A1600C14539 /* RetrieveUUIDApiRequest.swift in Sources */,
+				E4EC08A223574CF300C14539 /* MainInteractor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E4FE0EC22355F72800CB6174 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E4FE0EA92355F72300CB6174 /* GlobalRadioChallenge */;
+			targetProxy = E4FE0EC12355F72800CB6174 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E4FE0EB32355F72300CB6174 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E4FE0EB42355F72300CB6174 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E4FE0EB82355F72700CB6174 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E4FE0EB92355F72700CB6174 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E4FE0EC72355F72800CB6174 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E4FE0EC82355F72800CB6174 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E4FE0ECA2355F72800CB6174 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94B8A4EA7393B2B4A3BC30F5 /* Pods-GlobalRadioChallenge.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GlobalRadioChallenge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bella.GlobalRadioChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E4FE0ECB2355F72800CB6174 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7345BF2F384F9E127BCA50EC /* Pods-GlobalRadioChallenge.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GlobalRadioChallenge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bella.GlobalRadioChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E4FE0ECD2355F72800CB6174 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F1B29BC2ABFE9166489248A /* Pods-GlobalRadioChallengeTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GlobalRadioChallengeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bella.GlobalRadioChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GlobalRadioChallenge.app/GlobalRadioChallenge";
+			};
+			name = Debug;
+		};
+		E4FE0ECE2355F72800CB6174 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0EDE1321B8588D7F3E01E7C9 /* Pods-GlobalRadioChallengeTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GlobalRadioChallengeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bella.GlobalRadioChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GlobalRadioChallenge.app/GlobalRadioChallenge";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E4FE0EA52355F72300CB6174 /* Build configuration list for PBXProject "GlobalRadioChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4FE0EC72355F72800CB6174 /* Debug */,
+				E4FE0EC82355F72800CB6174 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4FE0EC92355F72800CB6174 /* Build configuration list for PBXNativeTarget "GlobalRadioChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4FE0ECA2355F72800CB6174 /* Debug */,
+				E4FE0ECB2355F72800CB6174 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4FE0ECC2355F72800CB6174 /* Build configuration list for PBXNativeTarget "GlobalRadioChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4FE0ECD2355F72800CB6174 /* Debug */,
+				E4FE0ECE2355F72800CB6174 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E4FE0EA22355F72300CB6174 /* Project object */;
+}

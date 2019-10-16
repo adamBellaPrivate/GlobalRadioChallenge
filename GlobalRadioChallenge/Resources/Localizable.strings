@@ -1,0 +1,19 @@
+/* 
+  Localizable.strings
+  GlobalRadioChallenge
+
+  Created by Adam Bella on 10/16/19.
+  Copyright © 2019 Bella Ádám. All rights reserved.
+*/
+
+// MARK: - Error handling
+
+general_error = "General error";
+business_error = "Business error: %d";
+unknown_error = "Unknown error";
+
+// MARK: - Main scene
+
+last_response_code = "Response Code:";
+count_fetched_times  = "Times Fetched:";
+fetch_content_action_button_title = "Fetch Content";
